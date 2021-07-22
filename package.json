@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@types/qs": "^6.9.7",
     "eslint-config-prettier": "^8.3.0",
     "json-serve": "^0.1.0"
   },
