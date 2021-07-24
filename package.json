@@ -15,7 +15,6 @@
     "@types/react-dom": "^17.0.9",
     "antd": "^4.16.8",
     "craco-less": "^1.18.0",
-    "jira-dev-tool": "^1.7.61",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -51,7 +50,9 @@
   },
   "devDependencies": {
     "@types/qs": "^6.9.7",
+    "dayjs": "^1.10.6",
     "eslint-config-prettier": "^8.3.0",
+    "jira-dev-tool": "^1.6.59",
     "json-serve": "^0.1.0"
   },
   "msw": {
