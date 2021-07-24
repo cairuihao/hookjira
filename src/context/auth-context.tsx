@@ -1,7 +1,7 @@
 import React, {ReactNode, useState} from "react";
 import { useMount } from "utils";
 import { http } from "utils/http";
-import * as auth from '../screens/login/auth-provider'
+import * as auth from '../auth-provider';
 
 interface AuthForm {
     username: string,

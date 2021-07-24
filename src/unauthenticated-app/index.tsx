@@ -18,9 +18,9 @@ export const UnauthenticatedApp = () => {
                 isRegister ? <RegisterScreen /> : <LoginScreen/>
             }
             <Divider />
-            <a onClick={() => setIsRegister(!isRegister)}>
+            <Button type='link' onClick={() => setIsRegister(!isRegister)}>
                 {isRegister ? '已经有账号请直接登录' : '没有账号请先注册账号'}
-            </a>
+            </Button>
         </ShadowCard>
     </Container>
 }
