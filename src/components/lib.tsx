@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
-import { Button } from "antd";
-
+import React from "react";
+import { Button, Typography } from "antd";
+import {Spin} from "antd";
 
 export const Row = styled.div<{
     gap?: number | boolean;
@@ -27,3 +28,19 @@ export const Row = styled.div<{
 export const ButtonNoPadding = styled(Button)`
   padding: 0;
 `;
+
+const FullPage = styled.div`
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const FullPageLoading = () => <FullPage>
+    <Spin size='large' />
+</FullPage>
+
+export const FullPageErrorFallback = ({error}: {error:Error|null}) => <FullPage>
+    <Typography.Text type='danger'>{error?.message}</Typography.Text>
+</FullPage>
+
