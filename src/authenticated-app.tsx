@@ -6,9 +6,12 @@ import styled from '@emotion/styled'
 import { Row, ButtonNoPadding } from 'components/lib'
 import { Dropdown, Menu } from 'antd';
 import Button from 'antd/es/button';
+import { useDocumentTitle } from 'utils';
 
 export default function AuthenticatedApp() {
-    const {logout, user} = useAuth()
+    const {logout, user} = useAuth();
+
+    useDocumentTitle('项目列表',false);
 
     return <Container>
         <PageHeader />

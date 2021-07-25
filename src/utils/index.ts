@@ -47,3 +47,19 @@ export const useDebounce = <V>(value: V, delay?: number): any => {
 
     return denounceValue;
 }
+
+export const useDocumentTitle = (title:string, keepOnUnmout: boolean = true) => {
+    const oldTitle = document.title;
+    
+    useEffect(() => {
+        document.title = title;
+    }, [title])
+
+    useEffect(() => {
+        return () => {
+            if(!keepOnUnmout) {
+                document.title = oldTitle;
+            }
+        }
+    },[])
+}
